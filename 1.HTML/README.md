@@ -400,6 +400,6 @@ Añade un pie de página.
 
 ## Fuentes 📢
 
-* [Curso de HTML5 y CSS3 desde basico a avanzado](https://www.udemy.com/course/curso-de-html5-y-css3-desde-basico-a-avanzado/learn/lecture/16496240#announcements)
+* [Curso de HTML5 y CSS3 desde basico a avanzado](https://www.udemy.com/course/curso-de-html5-y-css3-desde-basico-a-avanzado/)
 
 [Vuelta al indice](#indice)
