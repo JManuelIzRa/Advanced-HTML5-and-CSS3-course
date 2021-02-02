@@ -93,31 +93,75 @@ un espaciado fijo (el que dejamos nosotros escrito literalmente)
 <p>Usando br añadimos un salto de linea</p>
 ```
 
-[Return to summary](#summary)
+[Vuelta al indice](#indice)
 
 ## Formato de texto 📦
 
+El texto de los parrafos puede editarse de las siguientes formas:
 
+Negrita:
 
-[Return to summary](#summary)
+```html
+<p><b>Texto en negrita b</b></p>  
+<p><strong>Texto en negrita strong</strong></p><!--Tiene mayor importancia-->
+```
+
+Cursiva:
+
+```html
+<p><i>Texto en cursiva</i></p>
+<p><em>Texto enfatizado</em></p> <!--Tiene mayor importancia-->
+```
+
+Marcado:
+
+```html
+<p><mark>Texto subrayado en amarillo</mark></p>
+```
+
+Tachado:
+
+```html
+<p><del>Texto tachado</del></p>
+```
+
+Subrayado:
+
+```html
+<p><ins>Texto con subrayado bajo</ins></p>
+```
+
+Subindice:
+
+```html
+<p><sub>Texto en subindice</sub></p>
+```
+
+Superindice:
+
+```html
+<p><sup>Texto en superindice</sup></p>
+```
+
+[Vuelta al indice](#indice)
 
 ## Metadatos 🔨
 
 
-[Return to summary](#summary)
+[Vuelta al indice](#indice)
 
 ## Build with 🛠️
 
 * [VS Code](https://code.visualstudio.com/) - Code editor used
 * [Creative Commons](https://creativecommons.org/) - Used to choose the license
 
-[Return to summary](#summary)
+[Vuelta al indice](#indice)
 
 
 
-[Return to summary](#summary)
+[Vuelta al indice](#indice)
 
 ## Acknowledgments 📢
 
 
-[Return to summary](#summary)
+[Vuelta al indice](#indice)
