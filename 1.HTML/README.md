@@ -253,7 +253,7 @@ Describe claves para los motores de busqueda:
 
 Como añadir enlaces a nuestra página web. Hay varias formas:
 
-### URL absoluta:
+### URL absoluta
 
 ```html
 <a href="https://www.google.com/">Enlace hacia google</a>
