@@ -95,6 +95,16 @@ un espaciado fijo (el que dejamos nosotros escrito literalmente)
 
 [Vuelta al indice](#indice)
 
+## Atributos
+
+Los atributos dan información adicional sobre el contenido de un elemento. Se ponen en la etiqueta de apertura y esta formada por dos partes: un nombre y su valor separado por un signo igual.
+
+```html
+<p lang="en-us">Paragraph in English</p>
+
+<p lang="fr">Paragraphe en Français</p>
+```
+
 ## Formato de texto 🎨
 
 El texto de los parrafos puede editarse de las siguientes formas:
@@ -123,6 +133,8 @@ El texto de los parrafos puede editarse de las siguientes formas:
 
 ```html
 <p><del>Texto tachado</del></p>
+
+<p><s>Texto tachado</s></p>
 ```
 
 ### Subrayado
@@ -159,6 +171,54 @@ El texto de los parrafos puede editarse de las siguientes formas:
 </code>
 ```
 
+### Citas
+
+Hay dos elementos que se suelen usar para marcar citas:
+
+```html
+<blockquote cite="http://en.wikipedia.org/wiki/
+Winnie-the-Pooh">
+ <p>Did you ever stop to think, and forget to start
+ again?</p>
+</blockquote>
+```
+
+Usando blockquote la pagina le aplica una sangría automática.
+
+```html
+<p>As A.A. Milne said, <q>Some people talk to animals. Not many listen though. That's the problem.</q></p>
+```
+
+Pone comillas al texto que haya entre q y /q.
+
+### Abreviaturas y acrónimos
+
+Creamos una abreviatura y cuando se pase el cursor por encima nos da una descripción.
+
+```html
+<p><abbr title="National Aeronautics and Space Administration">NASA</abbr> do some crazy space stuff.</p>
+```
+
+En HTML 4 se usaba abbr y acronym, en HTML se usa abbr para ambos.
+
+### Menciones y definiciones
+
+Cuando hacemos referencia a un libro por ejemplo.
+
+```html
+<p><cite>A Brief History of Time</cite> by Stephen King</p>
+```
+
+En HTML 5 no se usa para citarel nombre de una persona. Los navegadores lo renderizan en cursiva.
+
+Para la primera vez que explicas un nuevo término en un documento.
+
+```html
+<p> A <dfn> black hole <dfn> is a region of space ...</p>
+
+
+```
+
 [Vuelta al indice](#indice)
 
 ## Metadatos ℹ️
@@ -193,7 +253,7 @@ Describe claves para los motores de busqueda:
 
 Como añadir enlaces a nuestra página web. Hay varias formas:
 
-Poniendo la URL absoluta:
+### URL absoluta:
 
 ```html
 <a href="https://www.google.com/">Enlace hacia google</a>
@@ -205,16 +265,50 @@ Si queremos que el enlace se abra en una pestaña nueva:
 <a href="https://www.google.com/" target="blank">Enlace hacia google</a>
 ```
 
-Enlace a documentos de nuestro propia pagina:
+### URL relativa
+
+Misma carpeta:
 
 ```html
 <a href="index.html" target="blank">Enlace hacia index local</a>
 ```
 
-Si el archivo está en otra carpeta, entonces:
+Otra carpeta:
 
 ```html
 <a href="/1.HTML/6. Enlaces html/index.html" target="blank">Enlace hacia index local</a>
+```
+
+Para acceder a otras carpetas hay más formas:
+
+Child folder. href="carpeta/.html"
+
+Grandchild folder. href="carpeta1/carpeta2/.html"
+
+Parent folder. href="../.html"
+
+Grandparent folder. href="../../.html"
+
+### Enlaces a correo
+
+Enlaces que crean directamente una ventana emergente en el programa de correo del usuario.
+
+```html
+<a href="mailto:example@example.org">Ejemplo Email</a>
+```
+
+### Enlaces a partes especificas de la misma página
+
+```html
+<a href="#Inicio">Inicio</a>
+
+<h2 id="Inicio">Inicio</h2>
+```
+
+### Enlaces a parte especificas de otra página
+
+```html
+<a href="http:/www.htmlandcssbook.com/#bottom">
 ```
 
 [Vuelta al indice](#indice)
@@ -289,6 +383,30 @@ También podemos añadir videos desde YouTube de la siguiente forma:
     <li>C++</li>
     <li>C</li>
 </ol>
+```
+
+### Listas con definiciones
+
+```html
+<dl>
+    <dt>C++</dt>
+    <dd>Lenguaje orientado a objetos.
+</dl>
+```
+
+### Lista anidada
+
+```html
+<ul>
+    <li>Carne</li>
+    <li>Queso
+        <ul>
+            <li>Cheddar</li>
+            <li>Mozzarella</li>
+        </ul>
+    </li>
+    <li>Verdura</li>
+</ul>
 ```
 
 [Vuelta al indice](#indice)
@@ -390,6 +508,23 @@ Añade un pie de página.
 </footer>
 ```
 
+### Detalles del autor
+
+Tiene un uso muy concreto, guardar los detalles de contacto del autor de la página.
+
+```html
+<address>
+    <p><a href="mailto:home@example.org">
+        home@example.org</a>
+    </p>
+    <p>
+        742 Evergreen Terrace, Springfield.
+    </p>
+<address>
+```
+
+Usando mailto: se abre direcvtamente una ventana emergente para escribir un correo.
+
 [Vuelta al indice](#indice)
 
 ## Construido con 🛠️
@@ -401,5 +536,7 @@ Añade un pie de página.
 ## Fuentes 📢
 
 * [Curso de HTML5 y CSS3 desde basico a avanzado](https://www.udemy.com/course/curso-de-html5-y-css3-desde-basico-a-avanzado/)
+
+* [HTML y CSS por Jon Duckett](https://www.amazon.es/gp/product/1118871642/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=3626&creative=24790&creativeASIN=1118871642&linkCode=as2&tag=xurxode-21)
 
 [Vuelta al indice](#indice)
