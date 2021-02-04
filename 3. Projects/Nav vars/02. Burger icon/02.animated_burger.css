@@ -70,3 +70,26 @@
     -webkit-transform:translate3d(-8px, -4px, 0) rotate(45deg) scale(0.7, 1);
     transform: translate3d(-8px, -4px, 0) rotate(45deg) scale(0.7, 1);
 }
+
+/*Hamburger menos*/
+.bar10, .bar11, .bar12{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition:0.4s;
+}
+
+.change .bar11{
+    opacity:0;
+}
+
+.change .bar10{
+    -webkit-transform: translate(0,12px);
+    transform: translate(0,12px);
+}
+
+.change .bar12{
+    -webkit-transform: translate(0,-10px);
+    transform: translate(o,-10px) ;
+}
