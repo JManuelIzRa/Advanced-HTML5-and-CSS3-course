@@ -1,0 +1,29 @@
+*{
+   /*El navegador trare sus propios margenes por defecto, para resetearlo usaremos:*/
+   margin:0;
+   padding: 0; 
+}
+
+div{
+    background-color: black;
+    /*margin-top: 200px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    width: 80px;*/
+
+    width: 80px;
+
+    margin: 0 auto;/*Centra un elemento automaticamente*/
+}
+
+p{
+    color: white;
+    margin-right: 40px;
+}
+
+.prueba
+{
+    background-color: thistle;
+
+    color: teal;
+}
