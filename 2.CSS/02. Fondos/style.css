@@ -1,0 +1,33 @@
+/*TIpos de selectores*/
+
+/*Selector universal*/
+*{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Selector para todos los a*/
+a{
+    color: mediumaquamarine;
+    font-size: 20px;
+}
+
+/*Selector basado en id*/
+#p1{
+    color: blue;
+}
+
+/*Selector de clase*/
+/*Sirve para reutilizar estilos*/
+.green{
+    color: greenyellow;
+}
+
+/*Selector por agrupacion*/
+h2{
+    color:hotpink;
+}
+
+h2.h2diferente{
+    color: black;
+}

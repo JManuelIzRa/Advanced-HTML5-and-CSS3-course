@@ -1,0 +1,14 @@
+.pixel{
+    background-color: burlywood;
+    /*Para que no ocupe todo el ancho se usa:*/
+    /*Los pixeles son unidades absolutas, no dependen de lo grande o peuqeña que esté la pagina*/
+    width: 200px;
+    font-size: 20px
+}
+
+.porcentaje{
+    background-color: coral;
+
+    /*El porcentaje es una unidad de medidad dinamica, depende de lo ancho de la ventana, se usa para pagina responsive*/
+    width: 20%;
+}

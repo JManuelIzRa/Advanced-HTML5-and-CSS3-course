@@ -1,0 +1,18 @@
+body{
+    /*background-color: burlywood;*/
+    /*Los colores se pueden poner por el nombre o por codigo hexadecimal, existen paginas como HTML color codes que proporcionan estos codigos*/
+    /*background-color: #045FB4*/
+
+    /*Los colores se pueden poner tambn con la funcion rgb o rgba si queremos añadir algo de transparencia*/
+
+    background-image: url("img/circle-blues.png");
+
+    /*Subtle patterns. Para hacer de la imagen un patron*/
+
+    /*background-repeat: repeat-x; repite la imagen en horizontal*/
+    /*background-repeat: repeat-y; repite la imagen en vertical*/  
+    background-repeat: no-repeat; /*no repite la imagen*/
+
+    background-position: right top; /*A la derecha, right left a la izquierda*/
+
+}
