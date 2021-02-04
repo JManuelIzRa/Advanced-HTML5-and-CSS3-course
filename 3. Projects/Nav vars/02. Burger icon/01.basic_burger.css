@@ -1,0 +1,6 @@
+div{
+    width:35px;
+    height: 5px;
+    background-color:black;
+    margin: 6px 0;/*Esto se usa para hacer las tres lineas del icono*/
+}

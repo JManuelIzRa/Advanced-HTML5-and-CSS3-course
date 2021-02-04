@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation bar</title>
+    <link rel="stylesheet" href="02.animated_burger.css">
+    <nav>
+        <!--La cantidad de lineas de la amburguesa dependerá de la cantidad de div que pongamos-->
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div> 
+
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar4"></div>
+            <div class="bar5"></div>
+            <div class="bar6"></div>
+        </div> 
+        
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar7"></div>
+            <div class="bar8"></div>
+            <div class="bar9"></div>
+        </div> 
+
+        <script>
+            function myFunction(x){
+                x.classList.toggle("change");
+            }
+        </script>
+    </nav>
+</head>
+<body>
+    
+</body>
+</html>

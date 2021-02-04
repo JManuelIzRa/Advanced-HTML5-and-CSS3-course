@@ -1,0 +1,72 @@
+/*Esto hace que sea clicable*/
+.container{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/*Hamburger en X*/
+.bar1, .bar2, .bar3{
+    width:35px;
+    height:5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*Hamburger que se deslizan las dos barras de encima hacia la izquierda y hacia abajo*/
+.bar4, .bar5, .bar6{
+
+    width:35px;
+    height:5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar4{
+    transform: translate3d(-10px, 6px, 0);
+}
+
+.change .bar5{
+    transform: translate3d(-5px, 3px, 0);
+}
+
+/*Hamburger en forma de flecha*/
+.bar7, .bar8, .bar9{
+
+    width:35px;
+    height:5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar7{
+    -webkit-transform: translate3d(-8px, 4px, 0) rotate(-45deg) scale(0.7, 1);
+    transform: translate3d(-8px, 4px, 0) rotate(-45deg) scale(0.7, 1);
+}
+
+.change .bar8{
+    -webkit-transform: translate(4px,0);
+    transform: translate(4px, 0);
+}
+
+.change .bar9{
+    -webkit-transform:translate3d(-8px, -4px, 0) rotate(45deg) scale(0.7, 1);
+    transform: translate3d(-8px, -4px, 0) rotate(45deg) scale(0.7, 1);
+}
