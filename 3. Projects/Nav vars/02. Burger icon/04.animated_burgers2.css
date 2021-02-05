@@ -6,14 +6,10 @@
 
 body{
     background-color: #272727;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .nav li a{
-    color: rgba(255,101,47,.2);
+    color: #272727;
     text-decoration: none;
 }
 
@@ -25,7 +21,7 @@ body{
 
 .nav li{
     list-style: none;
-    padding: 16px 0;
+    padding: 30px 0;
 }
 
 .nav{
@@ -35,24 +31,49 @@ body{
     display: none;
 }
 
+.menu_bg, .menu_bar{
+    top:0;
+    left:0;
+    position: absolute;
+    z-index:1;
+} 
+
+.menu_bg{
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, wheat,rgba(61, 37, 21, 0.301));
+    margin: 32px 10px 20px 12px; 
+    transition: 0.3s ease;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.menu_bar{
+    z-index: 100;
+}
+
+.menu_bg.open{
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+} 
+
 .menu_bttn{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 1;
     width: 80px;
     height: 80px;
+    margin: 30px 0 20px 20px;
     cursor: pointer;
-    transition: all .5s ease-in-out;
-    border: 3px solid #fff;
 }
 
 .menu_bttn_burger{
     width: 50px;
     height: 6px;
+    margin: 32px 10px 20px 12px;
     background-color: #fff;
+    display: block;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    box-shadow: 0 2px 5px wheat; /*rgba(255,101,47,.2)*/
     transition: all .5s ease-in-out;
 }
 
@@ -60,10 +81,11 @@ body{
     content: '';
     position: absolute;
     width: 50px;
-    height: 6px;
+    height: 6px; 
+    display: block;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    box-shadow: 0 2px 5px wheat;
     transition: all .5s ease-in-out;
 }
 
@@ -88,4 +110,9 @@ body{
 
 .menu_bttn.open .menu_bttn_burger::after{
     transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.nav.open {
+    display: block;
+
 }
