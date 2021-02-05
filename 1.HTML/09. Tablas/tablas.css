@@ -1,0 +1,19 @@
+table, th, td{
+    border: 1px solid black;
+    /*border-collapse: collapse;*/
+}
+
+
+table{
+    border-spacing: 5px;
+}
+
+/*Añadir padding a las celdas*/
+th, td{
+    padding: 15px;
+}
+
+/*Se nota muy poco pero justifica el texto a la izqd*/
+th{
+    text-align: left;
+}

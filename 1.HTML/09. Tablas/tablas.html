@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Tablas</title>
+    <link rel="stylesheet" href="tablas.css">
 </head>
 <body>
     <table>
+        <caption>Tabla de pruebas</caption>
         <!--tr es una fila de la tabla-->
         <tableheader>
             <tr>
             <!--th table header-->
                 <th>Frutas</th>
                 <th>Carnes</th>
+                <th colspan="2">Pescados</th>
             </tr>
 
         </tableheader>
@@ -20,6 +23,22 @@
             <!--td Table data-->
                 <td>Manzana</td>
                 <td>Pollo</td>
+                <td>De mar</td>
+                <td>De agua dulce</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Pera</td>
+                <td>Ternera</td>
+                <td>Pez espada</td>
+                <td>Lubina</td>
+                
+            </tr>
+
+            <tr>
+                <td>Cordero</td>
+                
+                <td>Barbo</td>
+                <td>Lenguado</td>
             </tr>
         </tablebody>
 
