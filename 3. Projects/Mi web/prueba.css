@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body nav{
+    overflow: hidden;
+    background-color: #444444;
+    align-items: center;
+}
+
+.bttn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    background-color: #444444;
+}
+
+.name{
+    overflow: hidden;
+    position: absolute;
+    margin-left: 45%;
+    margin-top:14px;
+    float:center;
+    display:block;
+    align-items:center;
+    text-align: center;
+    font-size: larger;
+    font:bold;
+    color: wheat;
+}
+
+.info{
+    overflow: hidden;
+    display: block;
+    float:right;/*Hace que todas las palabras se pongan en horizontal en vez de en vertical una debajo de otra*/
+    text-align:right;
+    padding: 16px;
+    text-decoration: dashed;
+    color: whitesmoke;    
+}
+
+.info div{
+    overflow: hidden;
+    margin-left: 15px;
+}
+
+.bttn-burger{
+    width:35px;
+    height:3px;
+    background-color: wheat;
+    margin-left: 9px;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px  #333;
+    transition: all .5s ease-in-out;
+    
+}
+
+.bttn-burger::before, .bttn-burger::after{
+    content:'';
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: wheat;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px  #333;
+    transition: all .5s ease-in-out;
+}
+
+.bttn-burger::before{
+    transform: translateY(10px); 
+}
+
+.bttn-burger::after{
+    transform: translateY(-10px); 
+}
+
+a:hover{
+    background-color: wheat;
+    color: #444444;
+}
+
+.bttn.open .bttn-burger{
+
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.bttn.open .bttn-burger::after{
+    transform:rotate(45deg) translate(35px, -35px);
+}
+
+.bttn.open .bttn-burger::before{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
