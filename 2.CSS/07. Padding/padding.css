@@ -1,0 +1,24 @@
+p{
+    background: orange;
+    width: 400px;
+}
+
+.p-p{
+    /*padding-top: 20px;Agrega al contenido 20 px hacia arriba; el margen aleja todo el contenido 20 px y el padding digamos que lo expande
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;*/
+
+    padding: 20px 20px 40px 50px;
+}
+
+.d p{
+    background-color: aqua;
+    width: 500px;
+    height: 200px;
+}
+
+.box-p{
+    padding-top: 90px;/*Al añadir el padding se sobrepasan los limited de altura establecidos anteriormente*/
+    box-sizing: border-box;/*Usamos esta funcion para solucionar esto*/
+}
