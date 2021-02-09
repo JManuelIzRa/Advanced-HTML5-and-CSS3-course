@@ -1,0 +1,28 @@
+div{
+    background-color: blue;
+}
+
+p{
+    color: white;
+}
+
+.width{
+    width: 400px;
+}
+
+.max-width{
+    max-width: 400px;
+}
+
+.min-width{
+    min-width: 400px;
+}
+
+.height{
+    height: 50px;
+}
+
+.min-max-height{
+    min-height: 200px;/*Adapta la altura conforme se añaden parrafos, el maximo lo limita y el minimo se va aumentando*/
+    max-height: 200px;
+}
