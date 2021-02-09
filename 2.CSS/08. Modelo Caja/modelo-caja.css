@@ -1,0 +1,19 @@
+.context{
+    box-sizing: content-box;
+    background: aqua;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+/*content-box añade el padding (todo lo que añadas) al contenido*/
+/*Ejemplo: aqui la caja es de 120x120 respetando los 100 de ancho y alto para el contenido*/
+.border{
+    box-sizing: border-box;
+    background: black;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid lightblue;
+}
+/*border-box resta el padding y el border (todo lo que añadas) al contenido*/
+/*Ejemplo: aqui la caja es de 100x100 teniendo solo 70 para el contenido, porque el resto se ha restado*/
