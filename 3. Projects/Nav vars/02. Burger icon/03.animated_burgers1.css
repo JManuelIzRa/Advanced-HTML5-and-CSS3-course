@@ -29,7 +29,7 @@ body{
     height: 6px;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    box-shadow: 0 2px 5px rgb(18, 75, 61);
     transition: all .5s ease-in-out;
 }
 
